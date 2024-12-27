@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url(menu.css);
+@import url(inicio.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --color-primary-1: #DBC6FF;
+    --color-primary-2: #b09dff;
+    --color-primary-3: #8677dd;
+    --color-primary-4: #5D52B3;
+    --color-primary-5: #33308b;
+    --color-primary-6: #29275B;
+
+    --color-neutra-0: #141414;
+    --color-neutra-1: #F5F5F5;
+}
+body{
+    background-color: var(--color-neutra-0);
+    height: 100vh;
+}
+.btn-contato{
+    padding: 7px 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: var(--color-primary-2);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: var(--color-primary-6);
+}
+.btn-contato:hover {
+    background-color: var(--color-primary-6);
+    color: var(--color-primary-2);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px var(--color-primary-3), 0 0 10px var(--color-primary-3), 0 0 20px var(--color-primary-3), 0 0 40px var(--color-primary-3);
+}
