@@ -1,0 +1,21 @@
+#inicio{
+    padding: 100px 4%;
+    margin-bottom: 80px;
+    display: flex;
+    min-height: calc(100vh - 91px);
+    position: relative;
+    justify-content: space-between;
+}
+.cta{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.title{
+    font-size: 2.5rem;
+    color: var(--color-primary-2);
+}
+.title span{
+    color: var(--color-primary-3);
+}
