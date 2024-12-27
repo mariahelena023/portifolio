@@ -1,21 +1,30 @@
 #inicio{
-    padding: 100px 4%;
-    margin-bottom: 80px;
+    padding: 100px 0%;
     display: flex;
     min-height: calc(100vh - 91px);
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .cta{
-    width: 35%;
     display: flex;
     flex-direction: column;
-    gap: 28px;
 }
-.title{
+.title-inicio{
+    margin-top: 70px;
     font-size: 2.5rem;
     color: var(--color-primary-2);
 }
-.title span{
+.title-span{
+    font-size: 1.5rem;
     color: var(--color-primary-3);
+    margin-bottom: 60px
+}
+.descricao-inicio{
+    color: var(--color-neutra-1);
+    font-size: 1.2rem;
+}
+.img-topo-site img{
+    height: 350px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
 }
