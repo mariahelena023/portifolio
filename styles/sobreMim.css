@@ -1,9 +1,10 @@
 #sobreMim{
     padding: 100px 0%;
     display: flex;
-    min-height: 90vh;
+    min-height: calc(100vh - 91px);
     position: relative;
     justify-content: space-around;
+    margin-bottom: 80px;
 }
 .cta-sobreMim{
     display: flex;

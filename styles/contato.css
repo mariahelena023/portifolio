@@ -1,0 +1,6 @@
+#contato{
+    padding: 100px 0%;
+    display: flex;
+    min-height: calc(100vh - 91px);
+    position: relative;
+}
