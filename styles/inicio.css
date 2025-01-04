@@ -1,7 +1,7 @@
 #inicio{
     padding: 100px 0%;
     display: flex;
-    min-height: calc(100vh - 91px);
+    min-height: 90vh;
     position: relative;
     justify-content: space-around;
 }
