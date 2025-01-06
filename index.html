@@ -111,11 +111,11 @@
         </section>
         <section id="contato">
             <h2 class="title-sections">Fala Comigo</h2>
-            <form action="#" class="form-contato">
-                <input type="text" placeholder="Seu Nome Completo:" required>
-                <input type="text" placeholder="Seu Email:" required>
-                <input type="text" placeholder="Seu Celular:">
-                <textarea placeholder="Seu Mensagem:" required></textarea>
+            <form action="faleComigo.php" class="form-contato" method="post">
+                <input type="text" placeholder="Seu Nome Completo:" required name="nome">
+                <input type="text" placeholder="Seu Email:" required name="email">
+                <input type="text" placeholder="Seu Celular:" name="telefone">
+                <textarea placeholder="Seu Mensagem:" required name="mensagem"></textarea>
                 <div class="btn-enviar">
                     <input type="submit" value="Enviar">
                 </div>
