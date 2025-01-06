@@ -24,7 +24,7 @@
                     <a href="#projetos" class="nav-link">Projetos</a>
                 </li>
             </ul>
-            <button class="btn-contato">
+            <button class="btn-contato" onclick="window.location.href='#contato'">
                 Contato
             </button>    
         </nav>
@@ -110,7 +110,16 @@
             </div>
         </section>
         <section id="contato">
-
+            <h2 class="title-sections">Fala Comigo</h2>
+            <form action="#" class="form-contato">
+                <input type="text" placeholder="Seu Nome Completo:" required>
+                <input type="text" placeholder="Seu Email:" required>
+                <input type="text" placeholder="Seu Celular:">
+                <textarea placeholder="Seu Mensagem:" required></textarea>
+                <div class="btn-enviar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
         </section>
     </main>
 </body>

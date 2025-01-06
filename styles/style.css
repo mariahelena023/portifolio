@@ -32,6 +32,9 @@
     --color-neutra-0: #0c0c0c;
     --color-neutra-1: #F5F5F5;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: var(--color-neutra-0);
     height: 100vh;
@@ -51,7 +54,7 @@ body{
     color: var(--color-primary-2);
     transform: scale(1.05);
     transition: all 0.3s ease;
-    box-shadow: 0 0 5px var(--color-primary-3), 0 0 10px var(--color-primary-3), 0 0 20px var(--color-primary-3), 0 0 40px var(--color-primary-3);
+    box-shadow: 0 0 3px var(--color-primary-3), 0 0 6px var(--color-primary-3), 0 0 12px var(--color-primary-3), 0 0 24px var(--color-primary-3);
 }
 .line{
     display: flex;
