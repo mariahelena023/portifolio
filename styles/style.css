@@ -107,3 +107,32 @@ footer .line-footer p a{
     gap: 25px;
     margin-bottom: 15px;
 }
+
+@media screen and (max-width: 12020px){
+    /*CLASSES GERAIS*/
+    main{
+        padding: 20px 5%;
+        width: 100%;
+    }
+
+    /*MENU*/
+    .nav-list{
+        width: 100%;
+    }
+    .nav-link{
+        font-size: 0.8rem;
+    }
+    .btn-contato{
+        padding: 10px 4%;
+    }
+
+    /*INÍCIO*/
+    .title-inicio, .title-span{
+        font-size: 1.5rem;
+    }
+    .decricao-inicio{
+        font-size: 1rem;
+    }
+
+    
+}
