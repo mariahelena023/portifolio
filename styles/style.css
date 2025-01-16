@@ -61,12 +61,41 @@ body{
     transition: all 0.3s ease;
     box-shadow: 0 0 3px var(--color-primary-3), 0 0 6px var(--color-primary-3), 0 0 12px var(--color-primary-3), 0 0 24px var(--color-primary-3);
 }
+.social-buttons{
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    margin-top: 30px;
+}
+.btn-social{
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-primary-6);
+    border: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--color-primary-1);
+    font-size: 24px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.btn-social:hover {
+    background-color: var(--color-primary-6);
+    color: var(--color-primary-2);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px var(--color-primary-3), 0 0 10px var(--color-primary-3), 0 0 20px var(--color-primary-3), 0 0 20px var(--color-primary-3);
+}
 .line{
     display: flex;
     background-color: var(--color-primary-2);
     height: 2px;
 }
-h2{
+.title-sections{
     color: var(--color-primary-2);
     font-size: 2.0rem;
     text-align: center;
@@ -88,7 +117,7 @@ footer .line-footer p a{
     color: var(--color-primary-1);
 
 }
-.line-footer {
+.line-footer{
     display: flex;
     width: 100%;
     align-items: center;
@@ -108,31 +137,302 @@ footer .line-footer p a{
     margin-bottom: 15px;
 }
 
-@media screen and (max-width: 12020px){
-    /*CLASSES GERAIS*/
-    main{
-        padding: 20px 5%;
-        width: 100%;
+/*RESPONSIVIDADE 1024PX*/
+@media screen and (max-width: 1204px){
+    /*GERAIS*/
+    .btn-social{
+        width: 35px;
+        height: 35px;
+        font-size: 1.3rem;
+    }
+    .title-sections{
+        margin-top: 20px;
+        font-size: 1.5rem
     }
 
     /*MENU*/
-    .nav-list{
-        width: 100%;
-    }
-    .nav-link{
-        font-size: 0.8rem;
-    }
     .btn-contato{
         padding: 10px 4%;
     }
 
-    /*INÍCIO*/
+    /*INICIO*/
     .title-inicio, .title-span{
         font-size: 1.5rem;
     }
-    .decricao-inicio{
+    .descricao-inicio{
         font-size: 1rem;
     }
+    .img-topo-site img{
+        margin-top: 35px;
+        height: 300px;
+    }
 
-    
+    /*SKILLS*/
+    .card-skill{
+        margin: 30px;
+    }
+
+    /*SOBRE MIM*/
+    .title-sobreMim, .title-span-sobreMim{
+        font-size: 1.5rem;
+    }
+    .descricao-sobreMim{
+        font-size: 1rem;
+    }
+    .img-sobreMim{
+        margin-top: 20px;
+    }
+
+    /*PROJETOS*/
+    .img-projeto{
+        width: 260px;
+        height: 360px;
+    }
 }
+/*RESPONSIVIDADE 768PX*/
+@media screen and (max-width: 768px){
+    /*GERAIS*/
+    .btn-social{
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
+    }
+    .title-sections{
+        margin-bottom: 20px;
+        font-size: 1.5rem
+    }
+
+    /*MENU*/
+    .btn-contato{
+        padding: 7px 4%;
+    }
+
+    /*INICIO*/
+    #inicio{
+        flex-direction: row;
+    }
+    .title-inicio, .title-span{
+        font-size: 1.3rem;
+    }
+    .descricao-inicio{
+        font-size: 0.9rem;
+    }
+    .img-topo-site img{
+        margin-top: 35px;
+        height: 300px;
+    }
+
+    /*SKILLS*/
+    .area-cards-skill{
+        gap: 2px;
+    }
+    .card-skill{
+        width: 5%;
+        height: 150px;
+        margin: 20px;
+    }
+
+    /*SOBRE MIM*/
+    .title-sobreMim, .title-span-sobreMim{
+        font-size: 1.3rem;
+    }
+    .descricao-sobreMim{
+        font-size: 0.9rem;
+    }
+    .img-sobreMim{
+        margin-top: 20px;
+    }
+
+    /*PROJETOS*/
+    .img-projeto{
+        width: 200px;
+        height: 260px;
+    }
+    .overlay{
+        font-size: 1rem;
+    }
+}
+/*RESPONSIVIDADE 425PX*/
+@media screen and (max-width: 425px){
+    /*GERAIS*/
+    .btn-social{
+        width: 25px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
+    .title-sections{
+        margin-top: 20px;
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*MENU*/
+    .menu{
+        background-color: rgba(51, 48, 139, 0.514);
+        padding: 16px 8%;
+    }
+    .menu-toggle{
+        display: block;
+        margin-right: 250px;
+    }
+    .nav-list{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 2;
+        padding: 16px 8%;
+        border-radius: 0 0 8px 8px;
+    }
+    .nav-list.open{
+        margin-top: 15px;
+        background: linear-gradient(rgba(51, 48, 139, 0.514), transparent);
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        display: flex;
+    }
+    .nav-item{
+        text-align: center;
+    }
+    .btn-contato{
+        margin: 8px auto 0;
+    }
+
+    /*INÍCIO*/
+    #inicio{
+        display: flex;
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .img-topo-site{
+        height: 250px;
+    }
+    /*SKILL*/
+    #skills{
+        padding: 7px 6%;
+    }
+    .area-cards-skill{
+        margin-right: 40px;
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+    }
+    .card-skill{
+        width: 100%;
+    }
+
+    /*SOBRE MIM*/
+    #sobreMim{
+        padding: 7px 6%;
+        width: 100%;
+        display: flex;
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .cta-sobreMim{
+        width: 100%;
+    }
+    .img-sobreMim img{
+        height: 250px;
+    }
+
+    /*PROJETOS*/
+    #projetos{
+        padding: 7px 6%;
+    }
+    .area-card-projetos{
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .img-projeto{
+        width: 80%;
+        height: 150px;
+    }
+
+    /*CONTATO*/
+    footer .line-footer p i{
+        font-size: 0.9rem;
+        color: var(--color-primary-6);
+        margin-right: 10px;
+    }
+    footer .line-footer p a{
+        font-size: 0.7rem;
+        color: var(--color-primary-1);
+    
+    }
+}   
+/*RESPONSIVIDADE 375PX*/
+@media screen and (max-width: 375px){
+    /*GERAIS*/
+    .btn-social{
+        width: 25px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
+    .title-sections{
+        margin-top: 20px;
+        font-size: 1.3rem;
+    }
+
+    /*MENU*/
+    .menu-toggle{
+        margin-right: 200px;
+    }
+    .nav-link{
+        font-size: 0.7rem;
+    }
+
+    /*INÍCIO*/
+    .img-topo-site{
+        height: 200px;
+        margin-bottom: 80px;
+    }
+
+    /*SKILL*/
+    #skills{
+        padding: 7px 6%;
+    }
+    .card-skill{
+        width: 100%;
+        height: 150px;
+    }
+
+    /*PROJETOS*/
+    #projetos{
+        padding: 7px 6%;
+    }
+    .area-card-projetos{
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .img-projeto{
+        width: 80%;
+        height: 150px;
+    }
+
+    /*CONTATO*/
+    footer .line-footer p i{
+        font-size: 0.9rem;
+        color: var(--color-primary-6);
+        margin-right: 5px;
+    }
+    footer .line-footer p a{
+        font-size: 0.6rem;
+        color: var(--color-primary-1);
+    
+    }
+}   
