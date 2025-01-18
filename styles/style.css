@@ -231,6 +231,10 @@ footer .line-footer p a{
         height: 150px;
         margin: 20px;
     }
+    .card-skill h3{
+        font-size: 0.9rem;
+        margin: 15px 0;
+    }
 
     /*SOBRE MIM*/
     .title-sobreMim, .title-span-sobreMim{
